@@ -1,0 +1,10 @@
+D:\Visual\Телефон\Телефон\bin\Debug\Телефон.exe.config
+D:\Visual\Телефон\Телефон\bin\Debug\Телефон.exe
+D:\Visual\Телефон\Телефон\bin\Debug\Телефон.pdb
+D:\Visual\Телефон\Телефон\obj\Debug\Телефон.csprojAssemblyReference.cache
+D:\Visual\Телефон\Телефон\obj\Debug\Телефон.Form1.resources
+D:\Visual\Телефон\Телефон\obj\Debug\Телефон.Properties.Resources.resources
+D:\Visual\Телефон\Телефон\obj\Debug\Телефон.csproj.GenerateResource.cache
+D:\Visual\Телефон\Телефон\obj\Debug\Телефон.csproj.CoreCompileInputs.cache
+D:\Visual\Телефон\Телефон\obj\Debug\Телефон.exe
+D:\Visual\Телефон\Телефон\obj\Debug\Телефон.pdb
