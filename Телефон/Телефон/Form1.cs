@@ -19,17 +19,13 @@ namespace Телефон
         {
             InitializeComponent();
         }
-
-        private void CheckBox1_CheckedChanged(object sender, EventArgs e)
+        enum ats : int
         {
-            if (Convert.ToString(textBox2.Text) == "Трубка")
-            { textBox2.Text = "Номер"; }
-            if ((checkBox1.Checked == true) & ((Convert.ToString(textBox2.Text) == "Данные") || (Convert.ToString(textBox2.Text) == "Занято")))
-            {
-                System.Windows.Forms.Application.Restart();
-                System.Environment.Exit(1);
-            }
+            Занято, Данные
         }
+        Random rnd = new Random();
+
+
         private void Button13_Click(object sender, EventArgs e)
         {
             string a0 = Convert.ToString(0);
@@ -109,7 +105,7 @@ namespace Телефон
         {
             string a12 = Convert.ToString("111");
             textBox1.Text = textBox1.Text + a12;
-            z++;
+            z=3;
         }
 
         private void TextBox1_TextChanged(object sender, EventArgs e)
@@ -135,16 +131,23 @@ namespace Телефон
             }
             if (Convert.ToString(textBox2.Text)== "Вызов")
             {
-                Random rnd = new Random();
-                int f00 = rnd.Next(1,2);
-                if (f00 == 1)
-                {
-                    textBox2.Text = "Занято";
-                }
-                if (f00 == 2)
-                {
-                    textBox2.Text = "Данные";
-                }
+                ats f00 = (ats)rnd.Next(2);
+                textBox2.Text = f00.ToString();
+            }
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+        }
+
+        private void Button2_Click(object sender, EventArgs e)
+        {
+            if (Convert.ToString(textBox2.Text) == "Трубка")
+            { textBox2.Text = "Номер"; }
+            if ( (Convert.ToString(textBox2.Text) == "Данные") || (Convert.ToString(textBox2.Text) == "Занято"))
+            {
+                System.Windows.Forms.Application.Restart();
+                System.Environment.Exit(1);
             }
         }
     }
